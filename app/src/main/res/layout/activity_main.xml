@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <Button
+        android:id="@+id/MainPage"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginBottom="80dp"
+        android:text="MainPage"
+        app:layout_constraintBottom_toTopOf="@+id/BMon"
+        app:layout_constraintEnd_toStartOf="@+id/textView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/Upgrade"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="100dp"
+        android:onClick="Upgrades"
+        android:text="Upgrades"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+    android:id="@+id/Cure"
+    android:layout_width="0dp"
+    android:layout_height="50dp"
+    android:layout_marginBottom="50dp"
+    android:onClick="Cure"
+    android:text="Cure"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/Settings"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="80dp"
+        android:onClick="Settings"
+        android:text="Settings"
+        app:layout_constraintBottom_toTopOf="@+id/BMon"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="170dp"
+        android:layout_marginLeft="170dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="170dp"
+        android:layout_marginRight="170dp"
+        android:layout_marginBottom="111dp"
+        android:text="MainPage"
+        app:layout_constraintBottom_toTopOf="@+id/BMon"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/BMon"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="150dp"
+        android:layout_marginBottom="180dp"
+        android:onClick="money"
+        android:text="Click me To get money"
+        app:layout_constraintBottom_toTopOf="@+id/Upgrade"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/TVal"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginEnd="250dp"
+        android:layout_marginRight="250dp"
+        android:layout_marginBottom="90dp"
+        android:text="0"
+        app:layout_constraintBottom_toTopOf="@+id/Upgrade"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/BMon" />
+
+    <TextView
+        android:id="@+id/TMod"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="300dp"
+        android:layout_marginLeft="300dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="90dp"
+        android:text="2"
+        app:layout_constraintBottom_toTopOf="@+id/Upgrade"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/BMon" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="340dp"
+        android:layout_marginRight="340dp"
+        android:layout_marginBottom="30dp"
+        android:text="Value"
+        app:layout_constraintBottom_toTopOf="@+id/TVal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/BMon" />
+
+    <TextView
+        android:id="@+id/Modif"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="340dp"
+        android:layout_marginLeft="340dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="30dp"
+        android:text="Modif"
+        app:layout_constraintBottom_toTopOf="@+id/TVal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/BMon" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Upgrades">
+
+    <Button
+        android:id="@+id/B2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="489dp"
+        android:onClick="mod2"
+        android:text="+2\n1000"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/Upgrade"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/B4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="54dp"
+        android:layout_marginLeft="54dp"
+        android:layout_marginEnd="54dp"
+        android:layout_marginRight="54dp"
+        android:layout_marginBottom="489dp"
+        android:onClick="mod4"
+        android:text="+4\n2000"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/Upgrade"
+        app:layout_constraintEnd_toStartOf="@+id/B6"
+        app:layout_constraintStart_toEndOf="@+id/B2" />
+
+    <Button
+        android:id="@+id/B6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="489dp"
+        android:onClick="mod6"
+        android:text="+6\n3000"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/Upgrade"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/B8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="50dp"
+        android:onClick="mod8"
+        android:text="+8\n4000"
+        android:visibility="visible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/B2" />
+
+    <Button
+        android:id="@+id/B10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="54dp"
+        android:layout_marginLeft="54dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="54dp"
+        android:layout_marginRight="54dp"
+        android:onClick="mod10"
+        android:text="+10\n5000"
+        app:layout_constraintEnd_toStartOf="@+id/B12"
+        app:layout_constraintStart_toEndOf="@+id/B8"
+        app:layout_constraintTop_toBottomOf="@+id/B4" />
+
+    <Button
+        android:id="@+id/B12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        android:onClick="mod12"
+        android:text="+12\n6000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/B6" />
+
+    <Button
+        android:id="@+id/MainPage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:onClick="MainActivity"
+        android:text="MainPage"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/Upgrade"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="100dp"
+        android:text="Upgrades"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/Cure"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="50dp"
+        android:onClick="Cure"
+        android:text="Cure"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/Settings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        android:onClick="Settings"
+        android:text="Settings"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="177dp"
+        android:layout_marginLeft="177dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="177dp"
+        android:layout_marginRight="177dp"
+        android:text="Upgrades"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/TVal"
+        android:layout_width="150dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="50dp"
+        android:text="0"
+        app:layout_constraintBottom_toTopOf="@+id/Upgrade"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/TMod"
+        android:layout_width="65dp"
+        android:layout_height="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="50dp"
+        android:text="2"
+        app:layout_constraintBottom_toTopOf="@+id/Upgrade"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="30dp"
+        android:text="Value"
+        app:layout_constraintBottom_toTopOf="@+id/TVal"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/Modif"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginBottom="30dp"
+        android:text="Modif"
+        app:layout_constraintBottom_toTopOf="@+id/TVal"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

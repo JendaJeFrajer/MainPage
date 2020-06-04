@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Cure">
+
+
+    <Button
+        android:id="@+id/MainPage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:onClick="MainActivity"
+        android:text="MainPage"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/Upgrade"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="100dp"
+        android:onClick="Upgrades"
+        android:text="Upgrades"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/Cure"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="50dp"
+        android:text="Cure"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/Settings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        android:onClick="Settings"
+        android:text="Settings"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="177dp"
+        android:layout_marginLeft="177dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="177dp"
+        android:layout_marginRight="177dp"
+        android:text="Cure"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/TVal"
+        android:layout_width="150dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="50dp"
+        android:text="0"
+        app:layout_constraintBottom_toTopOf="@+id/Upgrade"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/TCur"
+        android:layout_width="100dp"
+        android:layout_height="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="50dp"
+        android:text="0"
+        app:layout_constraintBottom_toTopOf="@+id/Upgrade"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="30dp"
+        android:text="Value"
+        app:layout_constraintBottom_toTopOf="@+id/TVal"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="96dp"
+        android:layout_marginRight="96dp"
+        android:layout_marginBottom="30dp"
+        android:text="Cure"
+        app:layout_constraintBottom_toTopOf="@+id/TVal"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/Doc1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="489dp"
+        android:onClick="Doc1"
+        android:text="+1\n5000"
+        app:layout_constraintBottom_toTopOf="@+id/Upgrade"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/Doc2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="489dp"
+        android:onClick="Doc2"
+        android:text="+2\n10000"
+        app:layout_constraintBottom_toTopOf="@+id/Upgrade"
+        app:layout_constraintEnd_toStartOf="@+id/Doc3"
+        app:layout_constraintStart_toEndOf="@+id/Doc1" />
+
+    <Button
+        android:id="@+id/Doc3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="489dp"
+        android:onClick="Doc3"
+        android:text="+3\n15000"
+        app:layout_constraintBottom_toTopOf="@+id/Upgrade"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="177dp"
+        android:layout_marginLeft="177dp"
+        android:layout_marginEnd="177dp"
+        android:layout_marginRight="177dp"
+        android:layout_marginBottom="20dp"
+        android:text="Doctors (5s)"
+        app:layout_constraintBottom_toTopOf="@+id/Doc2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/Fac1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="50dp"
+        android:onClick="Fac1"
+        android:text="+10\n100000"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Doc1" />
+
+    <Button
+        android:id="@+id/Fac2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="55dp"
+        android:layout_marginLeft="55dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="55dp"
+        android:layout_marginRight="55dp"
+        android:onClick="Fac2"
+        android:text="+15\n200000"
+        app:layout_constraintEnd_toStartOf="@+id/Fac3"
+        app:layout_constraintStart_toEndOf="@+id/Fac1"
+        app:layout_constraintTop_toBottomOf="@+id/Doc2" />
+
+    <Button
+        android:id="@+id/Fac3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        android:onClick="Fac3"
+        android:text="+20\n300000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Doc3" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="177dp"
+        android:layout_marginLeft="177dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="177dp"
+        android:layout_marginRight="177dp"
+        android:layout_marginBottom="25dp"
+        android:text="Laboratories (5s)"
+        app:layout_constraintBottom_toTopOf="@+id/Fac2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Doc2" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
